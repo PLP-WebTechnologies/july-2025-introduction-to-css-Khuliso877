@@ -3,91 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Box Model Demo</title>
+  <title>Khuliso</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p class="subtitle">It's a blessing to be the color of Earth, do you know how flowers confuse me for home</p>
+  </header>
 
-  <nav class="navbar">
-    <h1>My Styled Page</h1>
-    <button>Click Me</button>
-  </nav>
+  <main>
+    <section class="card">
+      <h2>About This Page</h2>
+      <p>This page demonstrates the CSS Box Model, selectors, and layout styling.</p>
+    </section>
 
-  <section class="container">
-    <div class="card">
-      <h2>Welcome!</h2>
-      <p>This is a demonstration of the CSS Box Model. Each section has margin, padding, and borders applied.</p>
-    </div>
-
-    <div class="card">
-      <h2>Another Section</h2>
-      <p>Notice how spacing and alignment change with different box properties.</p>
-    </div>
-  </section>
-
+    <section class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Lets style Moose</li>
+        <li>Box Model Implementation of moose</li>
+        <li>Consistent Layout</li>
+      </ul>
+    </section>
+  </main>
 
 /* Reset default spacing */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #f4f4f4;
   padding: 20px;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 8px;
-  margin-bottom: 20px;
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.navbar button {
-  background-color: #ff9800;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-/* Container section */
-.container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Card-like sections */
-.card {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Headings and paragraphs */
-h2 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-p {
+.subtitle {
   color: #555;
-  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Card sections */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #888;
 }
 </body>
 </html>
